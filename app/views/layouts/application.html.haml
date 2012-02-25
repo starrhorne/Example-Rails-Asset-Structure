@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    %title ExampleRailsAssetStructure
+    = stylesheet_link_tag "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+
+  -# We namespace the body class to the current controller and acton. Normally
+  -# you'd sanitize the names, but I've left that out for clarity
+
+  %body{ :class => [controller_name, action_name] }
+
+    -# If you want you can use HTML5 tags like <nav> but I've stuck with HTML4 for simplicity's sake
+
+    .component.header
+      %ul.navigation
+        %li= link_to("Feature", "/")
+        %li= link_to("Article", "/article")
+
+    = yield
+
+    .component.footer
+      %ul
+        %li= link_to("Feature", "/")
+        %li= link_to("Article", "/article")
