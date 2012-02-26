@@ -1,4 +1,31 @@
+
+//
+// Common mixins form a "style guide". 
+// The style guide is low-level, dealing mostly with text styles, colors, shadows, etc.
+//
+@import "styleguide/reset";
+@import "styleguide/layout";
+@import "styleguide/text";
+
+//
+// Components are shared styles that are more complex. Usually they 
+// will require specific HTML to be present. These correspond to the
+// partials in app/views/components
+//
 @import "components/header";
 @import "components/footer";
 @import "components/feature_container";
 @import "components/article_container";
+@import "components/help";
+
+//
+// Styles specific to individual pages
+//
+@import "content/feature";
+@import "content/article";
+
+
+html, body {
+  @include text-default;
+  background: #eee;
+}

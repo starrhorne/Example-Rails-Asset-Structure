@@ -1,0 +1,10 @@
+.component.help {
+  text-align: left;
+  >p {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: image-url("components/help/background.png");
+    text-align: center;
+  }
+}

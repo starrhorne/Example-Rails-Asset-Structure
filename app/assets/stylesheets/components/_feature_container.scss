@@ -1,0 +1,13 @@
+.component.feature-container {
+  @include fixed-width-container;
+
+  text-align: center;
+
+  >h2 {
+    @include text-major-heading;
+  }
+
+  >img {
+    width: 600px;
+  }
+}

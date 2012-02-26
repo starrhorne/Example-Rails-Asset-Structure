@@ -1,0 +1,33 @@
+.component.header {
+  @include fixed-width-container;
+
+  margin-top: 10px;
+  padding-top: 20px;
+
+  >h1 {
+    @include text-heading;
+  }
+
+  >ul.navigation {
+
+    margin-top: 10px;
+
+    >li {
+
+      display: inline;
+
+      >a {
+        @include text-navigation;
+        display: inline-block;
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: #f0f0f0;
+
+        &:hover {
+          background: white;
+        }
+      }
+    }
+  }
+}

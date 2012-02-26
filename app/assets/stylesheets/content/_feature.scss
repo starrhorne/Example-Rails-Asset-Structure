@@ -1,0 +1,11 @@
+body.content.feature {
+
+  // Example of a page-specific style change. We set the active navigation element's style.
+  // This is kind of a silly way to do it, but it shows you how to make a page-specific change
+  // to a component.
+
+  .component.header li.feature a {
+    background: white;
+  }
+
+}

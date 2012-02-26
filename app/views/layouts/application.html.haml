@@ -14,13 +14,15 @@
     -# If you want you can use HTML5 tags like <nav> but I've stuck with HTML4 for simplicity's sake
 
     .component.header
+      %h1 Front End Code Organization Example 
       %ul.navigation
-        %li= link_to("Feature", "/")
-        %li= link_to("Article", "/article")
+        %li.feature= link_to("Feature", "/")
+        %li.article= link_to("Article", "/article")
 
     = yield
 
     .component.footer
+      &copy; Starr Horne. MIT license. 
       %ul
         %li= link_to("Feature", "/")
         %li= link_to("Article", "/article")

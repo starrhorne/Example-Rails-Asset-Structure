@@ -1,2 +1,11 @@
 .component.article-container
-  some stuff
+
+  %h2 Article Container Example
+
+  .component.help
+    %a{ "data-toggle" => "", :href => "#" }  Toggle help
+    %p{ "data-target" => "" } This is an example of the article container component. You can find the css for it in app/assets/stylesheets/components/_article_container.scss
+
+  - 5.times do |i|
+    %h2== Paragraph #{ i + 1 }
+    = simple_format(Faker::Lorem.paragraphs(10).join("\n\n"))

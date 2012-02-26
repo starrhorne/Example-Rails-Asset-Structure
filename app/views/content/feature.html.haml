@@ -1,4 +1,16 @@
 .component.feature-container
-  some stuff
-  = Faker::Lorem.sentences(10).join(" ")
 
+  %h2 A fancy feature page
+
+  .component.help
+    %a{ "data-toggle" => "", :href => "#" }  Toggle help
+    %p{ "data-target" => "" } This is an example of the featured container component. You can find the css for it in app/assets/stylesheets/components/_feature_container.scss
+
+  -# 
+  -# Images for this page go in /controllername/actionname/
+  -# 
+  = image_tag("content/feature/geisha.png")
+
+  .component.help
+    %a{ "data-toggle" => "", :href => "#" }  Toggle help
+    %p{ "data-target" => "" } This image is in app/assets/images/content/feature/ because it occurs only on this page.

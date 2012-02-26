@@ -1,0 +1,30 @@
+
+@mixin text-default {
+  font: 12px "Helvetica", "Arial", sans-serif; 
+  color: #333;
+}
+
+@mixin text-navigation {
+  font: 12px "Helvetica", "Arial", sans-serif; 
+  color: #0D9A9E;
+}
+
+@mixin text-major-heading {
+  font: bold 30px "Helvetica", "Arial", sans-serif; 
+  color: red;
+}
+
+@mixin text-heading {
+  font: bold 20px "Helvetica", "Arial", sans-serif; 
+  color: black;
+}
+
+@mixin text-subheading {
+  font: bold 16px "Helvetica", "Arial", sans-serif; 
+  color: black;
+}
+
+@mixin text-minor {
+  font: 10px "Helvetica", "Arial", sans-serif; 
+  color: #999;
+}

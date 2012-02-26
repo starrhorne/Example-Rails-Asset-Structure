@@ -1,0 +1,19 @@
+.component.footer {
+  @include fixed-width-container;
+  @include text-minor;
+
+  overflow: hidden;
+
+  >ul {
+
+    float: right;
+
+    >li {
+      display: inline;
+      >a {
+        @include text-minor;
+        padding: 0 10px;
+      }
+    }
+  }
+}
