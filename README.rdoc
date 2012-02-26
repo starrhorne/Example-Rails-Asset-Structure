@@ -68,6 +68,6 @@ super clean CSS namespace, which we then make use of in JS to implement behavior
 
 == Further Reading
 
-* http://starrhorne.com/2012/02/16/building-front-ends-that-dont-suck-five-tips-for-rails-developers.html (Where I talk about lessons learned applying these techniques in the seattle-based startup where I work)
+* [Lessons learned applying these UI techniques in the seattle-based startup where I work]http://starrhorne.com/2012/02/16/building-front-ends-that-dont-suck-five-tips-for-rails-developers.html 
 
 
